@@ -18,5 +18,4 @@ a best case input for your implementation look like, what does a worst case
 input look like? How would this complexity change if you generated permutations
 randomly without memory instead of systematically trying them?
 
-Describe your reasoning and the conclusion you've come to. Your reasoning is the
-most important part. Add your answer to this markdown file.
+The best case is one in which the algorithm is fed an already sorted array. In this case only one permutation is tried giving us a time complexity of O(1). On the flip side, the worst case input is a reverse-sorted array. (i.e. one sorted in descending order) In this case we have a time complexity of O(N!) as every permutation of the array needs to be tested. Generating permutations randomly will still have a worst case time complexity of O(N!) however the average case may be different. The idea in randomly trying permutations without any systematic behavior is that we will stumble upon a sorted array before the systematic approach does. However, this is of course completely random so saying definitively whether or not this method is superior is difficult.
