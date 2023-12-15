@@ -1,6 +1,5 @@
-// A COUNTEREXAMPLE OF [1, 0] FAILS WITH THIS EVERY TIME
-
-function permutationSort(a) {
+function permutationSort(arr) {
+    if ( 
     function isSorted(arr) {
         for (let i = 0; i < arr.length - 1; i++) {
             if (arr[i] > arr[i + 1]) {
@@ -23,7 +22,6 @@ function permutationSort(a) {
             }
             return count + 1;
         }
-
         let totalTries = count;
         for (let i = start; i < arr.length; i++) {
             swap(arr, start, i);
