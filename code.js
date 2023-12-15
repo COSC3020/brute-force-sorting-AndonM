@@ -30,5 +30,5 @@ function permutationSort(arr) {
         }
         return totalTries;
     }
-    return permute(a.slice(), 0, 0);
+    return permute(arr.slice(), 0, 0);
 }
